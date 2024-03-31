@@ -1,0 +1,73 @@
+/* body {
+    padding: 0 64px;
+} */
+
+.home-container {
+    width: 1306px;
+}
+
+/* .header {
+    position: relative;
+    top: 12px;
+    width: 100%;
+} */
+
+.footer {
+    margin-top: 64px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.video-bg {
+    margin-top: 100px;
+}
+
+.short-intro {
+    max-width: 100%;
+    margin: 64px;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    padding: 0 64px 64px 64px;
+}
+
+.quiz-home {
+    position: relative;
+    width: 50%;
+    flex: 1;
+    margin-right: 40px;
+    height: 584px;
+}
+
+.recommand-home {
+    flex: 1;
+}
+
+.main-container {
+    height: 648px;
+}
+
+.cf-scroll-home {
+    padding: 0 64px 64px 64px;
+}
+
+.cf-scroll-home .home-title {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 16px;
+    margin-left: 20px;
+}
+
+.news-list-home {
+    padding: 0 64px 64px 64px;
+}
+
+.news-list-home .home-title {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 16px;
+    margin-left: 20px;
+}

@@ -1,0 +1,30 @@
+.short-introduce {
+    display: flex;
+    height: 360px;
+}
+
+.short-introduce .image-introduce {
+    overflow: hidden;
+    flex: 1;
+    margin-right: 40px;
+}
+
+.short-introduce img {
+    height: 360px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.content-introduce {
+    flex: 1;
+}
+
+.short-introduce .title-introduce {
+    font-size: 40px;
+    padding: 0;
+    font-weight: 600;
+}
+
+.short-introduce p {
+    text-align: justify;
+}
