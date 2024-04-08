@@ -1,0 +1,47 @@
+:root {
+    --font-text: "Poppins", sans-serif;
+    --black: #000000;
+    --white: #ffffff;
+    --main-color: #381b07;
+    --tomato: #fd6500;
+    --second-color: #7c3c10;
+    --red-color: #ff0000;
+    --blue-color: #00a2ff;
+}
+
+.resigter-title {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+}
+
+.input-form {
+    margin-top: 20px;
+}
+
+.input-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+    position: relative;
+}
+
+.input-form button {
+    background-color: var(--main-color);
+    border: 0;
+    color: var(--white);
+    width: 100%;
+    padding: 10px;
+    margin: 24px 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.input-form button:active {
+    background-color: var(--second-color);
+}

@@ -28,6 +28,7 @@ body {
     flex: 1;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .logo img {
@@ -105,6 +106,11 @@ body {
     margin: 0 1px;
 }
 
+.login-nav a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 .login-nav button:hover {
     background-color: var(--main-color);
     color: white;
@@ -169,127 +175,9 @@ body {
     margin-left: 70px;
 }
 
-.login-form {
-    display: none; /*form đăng nhập bị ẩn*/
+.login-form-nav {
+    display: block;
     position: absolute;
-    top: 50%;
+    top: 155%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--white);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 400px;
 }
-
-.login-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 4px 0;
-    box-sizing: border-box;
-    font-family: var(--font-text);
-}
-
-.login-form button {
-    background-color: var(--main-color);
-    border: 0;
-    color: var(--white);
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    font-family: var(--font-text);
-    font-weight: 500;
-}
-
-.login-form button:hover {
-    background-color: var(--second-colo);
-    color: var(white);
-}
-
-.resigter-form {
-    display: none; /*form đăng nhập bị ẩn*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--white);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 400px;
-}
-
-.resigter-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 4px 0;
-    box-sizing: border-box;
-    font-family: var(--font-text);
-}
-
-.resigter-form button {
-    background-color: var(--main-color);
-    border: 0;
-    color: var(--white);
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    box-sizing: border-box;
-    font-family: var(--font-text);
-    font-weight: 500;
-}
-
-.resigter-form button:hover {
-    background-color: var(--second-colo);
-    color: var(white);
-}
-
-.search-empty-alerForm {
-    display: none;
-    position: absolute;
-    background: var(--white);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    padding: 32px 80px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.search-empty-alerForm img {
-    width: 80px;
-    height: 80px;
-}
-
-#empty-title {
-    margin-bottom: 12px;
-    position: relative;
-    font-weight: 500;
-    color: var(--red-color);
-    font-size: 32px;
-}
-
-.search-empty-alerForm p {
-    margin: auto;
-}
-
-.search-empty-alerForm button {
-    width: 100%;
-    border-radius: 2px;
-    border: 0;
-    background-color: var(--main-color);
-    padding: 12px;
-    box-sizing: border-box;
-    color: var(--white);
-    font-weight: 600;
-    margin-top: 20px;
-}
-
-.search-empty-alerForm button:hover {
-    background-color: var(--tomato);
-} 

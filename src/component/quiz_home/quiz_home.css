@@ -9,6 +9,7 @@
 .box-quiz {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .quiz-container .quiz-title {

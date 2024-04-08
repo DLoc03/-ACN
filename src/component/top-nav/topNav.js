@@ -1,40 +1,43 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./topNav.css";
 import Logo from "../../assets/cophee-icon.png";
 import { FaSearch } from "react-icons/fa";
-import Home from "../Home/Home";
-import ListAll from "../ListAll/ListAll";
 
 function fillSearchBar(element) {
   const searchBar = document.getElementById("search-bar");
   searchBar.value += element.textContent;
 }
 
-export default function TopNav() {
+function Top_Nav() {
+  const goToLoginPage = () => {
+    window.location.href = "/loginform";
+  };
+
+  const goToResigterPage = () => {
+    window.location.href = "/resigterform";
+  };
+
+  const gotoHomePage = () => {
+    window.location.href = "/";
+  };
   return (
     <div className="top-nav-box">
       <div className="top-nav">
         <div class="logo">
-          <img src={Logo} href="" />
+          <img src={Logo} href="" alt="Logo" onClick={gotoHomePage} />
         </div>
         <div className="main-nav">
           <li>
-            <a href="/">Home</a>
-            <Home />
-            {/* <div className="page home-page">Home</div> */}
+            <a class="home-btn" href="/">
+              Home
+            </a>
           </li>
           <li>
             <a href="/listall">Location</a>
-            <ListAll />
-            {/* <div className="page list-all-page" onclick={<ListAll />}>
-              Location 
-            </div>*/}
           </li>
           <li>
-            <div className="page about-us-page" onClick={ListAll}>
-              About Us
-            </div>
+            <a href="/aboutus">About Us</a>
           </li>
         </div>
 
@@ -43,16 +46,15 @@ export default function TopNav() {
             type="submit"
             class="login-btn"
             id="login-btn"
-            onclick="showLogin()"
+            onClick={goToLoginPage}
           >
             Login
           </button>
           <div className="half"></div>
           <button
-            type="submit"
-            class="resigter-btn"
+            className="resigter-btn"
             id="resigter-btn"
-            onclick="showResigter()"
+            onClick={goToResigterPage}
           >
             Resigter
           </button>
@@ -70,16 +72,6 @@ export default function TopNav() {
         </button>
       </div>
 
-      <div className="search-empty-alerForm" id="empty-alertForm">
-        <img src={Logo} href="" />
-        <p id="empty-title">MESSAGE</p>
-        <p id="empty-content">Keyword search drum.</p>
-        <p id="empty-content">Please enter the keyword!</p>
-        <button type="submit" id="empty-ok" onclick="closeEmptyForm()">
-          OK
-        </button>
-      </div>
-
       <div className="recommend-container">
         <p onclick={fillSearchBar}>#phuong 8</p>
         <p onclick={fillSearchBar}>#phuong 2</p>
@@ -94,3 +86,5 @@ export default function TopNav() {
     </div>
   );
 }
+
+export default Top_Nav;

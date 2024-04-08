@@ -1,0 +1,19 @@
+.header {
+    position: relative;
+    top: 12px;
+    width: 100%;
+}
+
+.login-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.footer {
+    margin-top: 64px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
